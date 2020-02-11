@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import Carousel from './Carousel';
 
 const data = [
   {
@@ -28,11 +29,25 @@ const data = [
   },
 ];
 
+const slideData = [
+  {
+    title: 'Welcome! Swipe to continue',
+  },
+  {
+    title: 'About Feature X',
+  },
+  {
+    title: 'About Feature Y',
+  },
+];
+
 const App = () => {
   return (
     <View style={styles.container}>
       <Text>Carousel</Text>
-      <Text>Intro Slides Carousel</Text>
+      <Carousel style="stats" items={data} itemsPerInterval={3} />
+      <Text style={styles.textMargin}>Intro Slides Carousel</Text>
+      <Carousel style={'slide'} items={slideData} />
     </View>
   );
 };
@@ -45,5 +60,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
+  },
+  textMargin: {
+    marginTop: 30,
   },
 });

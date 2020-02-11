@@ -62,26 +62,26 @@ const styles = StyleSheet.create({
   scrollView: {
     display: 'flex',
     flexDirection: 'row',
-    overflow: 'hidden',,
+    overflow: 'hidden',
   },
   statsHead: {
     paddingTop: 10,
     paddingHorizontal: 12,
   },
   bullets: {
-      position: 'absolute',
-      top: 0,
-      right: 0,
-      display: 'flex',
-      justifyContent: 'flex-start',
-      flexDirection: 'row',
-      paddingHorizontal: 10,
-      paddingTop: 5,
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    display: 'flex',
+    justifyContent: 'flex-start',
+    flexDirection: 'row',
+    paddingHorizontal: 10,
+    paddingTop: 5,
   },
   bullet: {
-      paddingHorizontal: 5,
-      fontSize: 20
-  }
+    paddingHorizontal: 5,
+    fontSize: 20,
+  },
 });
 
 export default styles;
